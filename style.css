@@ -1,12 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
-header{
+
+header {
   position: fixed;
-  background-color: rgb(191, 204, 204);
+  background-color: transparent;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -15,25 +16,34 @@ header{
   z-index: 100;
   align-items: center;
 }
-header .logo{
+
+header .logo {
   font-size: 2em;
   color: rgb(79, 14, 14);
   cursor: default;
 }
-header .logo span{
-  color:rgb(63, 63, 60);
+
+header .logo span {
+  color: rgb(63, 63, 60);
 }
-header .navigation a{
-  font-size: 1.3em;
-  color:rgb(79, 14, 14);
+header .navigation a.front{
+  color: rgb(217, 245, 245);
+  background-color: rgb(167, 147, 147);
+}
+header .navigation a {
+  font-size: 1.5em;
+  color: rgb(15, 2, 2);
   text-decoration: none;
   margin-right: 40px;
   font-weight: 500;
+  transition: .2s;
 }
-header .navigation a:hover{
-  color: rgb(3, 46, 24);
+header .navigation a:hover {
+  color: rgb(217, 245, 245);
+  background-color: rgb(167, 147, 147);
 }
-header .btn{
+
+header .btn {
   color: rgb(202, 211, 226);
   text-decoration: none;
   padding: 8px 35px;
@@ -43,11 +53,13 @@ header .btn{
   font-weight: 500;
   transition: .3s;
 }
-header .btn:hover{
-color: rgb(41, 8, 66);
-background: rgb(65, 144, 173);
-transform: scale(1.002);
+
+header .btn:hover {
+  color: rgb(41, 8, 66);
+  background: rgb(65, 144, 173);
+  transform: scale(1.002);
 }
+
 .Home {
   background-color: rgb(185, 193, 192);
   position: relative;
@@ -62,45 +74,109 @@ transform: scale(1.002);
   background-size: 400px;
 }
 
-.content{
-line-height: 1.2;
-color: rgb(79, 14, 14);;
-font-weight: 300;
+.content {
+  line-height: 1.2;
+  color: rgb(79, 14, 14);
+  ;
+  font-weight: 300;
 }
-.content h2{
-font-size: 46px;
+
+.content h2 {
+  font-size: 46px;
 }
-.content h2 span{
+
+.content h2 span {
   color: rgb(63, 63, 60);
   font-size: 46px;
 }
+
 .content h4 {
-font-size: 40px;
+  font-size: 40px;
 }
-.content p{
+
+.content p {
   padding: 10px 0 40px 0;
 }
-.btn-grp a{
+
+.btn-grp a {
   color: rgb(190, 196, 212);
   text-decoration: none;
   padding: 10px 40px;
   background-color: rgb(92, 54, 163);
   border-radius: 10px;
   border: 2px solid;
-  font-weight: 500 ;
-}
-.btn-grp a:hover:nth-child(1){
-  background: transparent ;
-  color: rgb(109, 96, 113);
+  font-weight: 500;
 }
 
-.btn-grp a:nth-child(2){
-  color: rgb(109, 96, 113);
+.btn-grp a:hover:nth-child(1) {
+  background: transparent;
+  color: rgb(86, 55, 96);
+}
+
+.btn-grp a:nth-child(2) {
+  color: rgb(86, 55, 96);
   background: transparent;
   margin-left: 30px;
   padding: 10px 40px;
 }
-.btn-grp a:hover:nth-child(2){
+
+.btn-grp a:hover:nth-child(2) {
   color: #fff;
   background: rgb(92, 54, 163);
+}
+
+.icon {
+  position: absolute;
+  bottom: 50px;
+}
+
+.icon a {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(92, 54, 163);
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+  margin: 36px;
+  padding: 10px 10px;
+  line-height: 100px;
+}
+.icon a:hover{ 
+background-color: rgb(112, 171, 164);
+}
+.about{
+  padding:6rem;
+  position: relative;
+  background-color: rgb(185, 193, 192);
+  height: 100vh;
+  
+}
+.about .container{
+    display: flex;
+    align-items: center;
+}
+.about .container img{
+  margin-top: 100px;
+  height: 400px;
+  width: 500px;
+}
+.about .container .about-info h1{
+  font-weight: 200;
+  color: rgb(61, 7, 62);
+  font-size: 50px;
+  line-height: 1.5;
+}
+.about .container .about-info h1 span{
+  color: rgb(96, 153, 134);
+}
+.about .container .about-info h3{
+  color: rebeccapurple;
+  font-size: 30px;
+  line-height: 1.4;
+}
+.about .container .about-info p{
+  color: rgb(60, 48, 96);
+  font-family: Arial, Helvetica, sans-serif;
 }
