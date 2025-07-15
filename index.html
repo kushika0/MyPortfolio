@@ -7,24 +7,36 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/bc11fa15ad.js" crossorigin="anonymous"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
-    <h2 class="logo"><span>K</span>ushika.</h2>
-    <nav class="navigation ">
-      <a href="#home" class="front">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+    <nav class=" navigation navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand logo  fw-bold fs-2" href="#"><span>K</span>ushika.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#home" class=" front nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link"> About Me</a></li>
+            <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
     </nav>
-    <a href="#" class="btn">Let's Talk</a>
   </header>
   <section class="Home" id="home">
-    <div class="content">
-      <h2>Hi, I am <span>Kushika Kumari</span></h2>
+    <div class="col-lg-6 content ">
+      <h2>Hi,I am <span>Kushika Kumari</span></h2>
       <h4>Web Developer</h4>
       <p>I am a Web Developer,currently pursuing Btech from IIMT COLLEGE OF ENGINEERING</p>
       <div class="btn-grp">
@@ -36,6 +48,9 @@
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-facebook"></i></a>
       </div>
+    </div>
+    <div class="col-lg-6 image">
+      <img src="profile.png" alt="">
     </div>
   </section>
   <section class="about" id="about">
@@ -49,6 +64,59 @@
           necessitatibus. Culpa.</p>
       </div>
     </div>
+
+
+
+    <!-- SKILL PART -->
+
+
+  </section>
+  <section class="Skills py-5" id="Skills">
+    <div class="container-fluid ">
+      
+    <h2 class="Heading">My Skills</h2>
+    <div class="skills-row">
+      <div class=" col-lg-6 mb-4 skills-coloumn">
+        <h3 class="title text-center">Techinal Skills</h3>
+
+        <div class="skills-box">
+          <div class="skills-content">
+            <p>
+            <h3>HTML <span>95%</span></h3>
+          
+            <!-- <div class="progress"> -->
+            <h3>CSS <span>90%</span></h3>
+
+            <!-- <div class="progress"> -->
+            <h3>Java Script <span>40%</span></h3>
+
+            <!-- <div class="progress"> -->
+            <h3>Python <span>80%</span></h3></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4 skills-coloumn">
+        <h3 class="title text-center">Soft Skills</h3>
+
+        <div class="skills-box">
+          <div class="skills-content">
+            <p>
+            <h3>Leadership <span>90%</span></h3>
+
+            <!-- <div class="progress"> -->
+            <h3>Team Work <span>94%</span></h3>
+
+            <!-- <div class="progress"> -->
+            <h3>Communication Skills <span>70%</span></h3>
+
+            
+            <h3>Problem Solving <span>95%</span></h3></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
   </section>
 </body>
+
 </html>
