@@ -2,202 +2,484 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kushika Kumari | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/bc11fa15ad.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 
 <body>
 
-
   <!-- Navbar -->
-
-
   <header>
-    <nav class=" navigation navbar navbar-expand-lg fixed-top navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand logo  fw-bold fs-2" href="#"><span>K</span>ushika.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a class="nav-logo" href="#home"><span>K</span>ushika.</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
         </button>
-        <div class="collapse navbar-collapse" id="mynav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a href="#home" class=" front nav-link active">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link"> About Me</a></li>
-            <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
-          </ul>
-        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
       </div>
-
     </nav>
   </header>
 
-
   <!-- Hero Section -->
-
-
-  <section class="Home" id="home">
-    <div class="col-lg-6 content ">
-      <h2>Hi,I am <span>Kushika Kumari</span></h2>
-      <h4>Web Developer</h4>
-      <p>A Computer Science student deeply interested in software development and web technologies.Currently pursuing
-        Btech from IIMT COLLEGE OF ENGINEERING, AKTU</p>
-      <div class="btn-grp">
-        <a href= "Kushika Resume.pdf"download><i class="fa-solid fa-download"></i>   Resume</a>
-        <a href="#Contact">Contact Me</a>
-      </div>
-      <div class="icon">
-        <a href="https://www.linkedin.com/in/kushika-kumari-6391b5260" target="_blank"><i
-            class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:kushika1404@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://github.com/kushika0" target="_blank"><i class="fa-brands fa-github"></i></i></a>
-      </div>
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-blob blob-3"></div>
     </div>
-    <div class="col-lg-6 image">
-      <img src="profile.png" alt="">
-    </div>
-  </section>
-  <section class="about" id="about">
-    <div class="container">
-      <img src="about.png" alt="">
-      <div class="about-info">
-        <h1>About <span>Me</span></h1>
-        <h3> Hello,I'm Kushika Kumari.</h3>
-        <p> I enjoy creating websites and applications using languages like HTML, CSS, JavaScript, Java, and Python.
-          <br>
-          I love exploring new technologies and working on real-world projects that help me grow as a developer. <br>My goal
-          is to improve my skills every day and prepare for exciting opportunities in the tech world.
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">Kushika <span>Kumari</span></h1>
+        <h2 class="hero-role">
+          <span class="role-text" id="roleText">Web Developer</span>
+          <span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          A Computer Science student passionate about software development, AI/ML, and web technologies.
+          Currently pursuing B.Tech from IIMT College of Engineering, AKTU — CGPA 9.0.
         </p>
+        <div class="hero-btns">
+          <a href="Kushika_Kri.pdf" download class="btn btn-primary">
+            <i class="fa-solid fa-download"></i> Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/kushika-kumari-6391b5260" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/kushika0" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:kushika1404@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="profile.png" alt="Kushika Kumari" />
+        </div>
       </div>
     </div>
-
-
-
-    <!-- SKILL PART -->
-
-
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
   </section>
-  <section class="Skills py-5" id="Skills">
+
+  <!-- About Section -->
+  <section class="about section" id="about">
     <div class="container">
-      <h2 class="text-center mt-5 mb-5">My <span style="color: #491755;">Skills</span></h2>
-
-      <div class="Skills-body d-flex justify-content-evenly">
-        <!-- Technical Skills -->
-        <div class=" title col-md-6 mb-4 shadow-lg p-4 mb-5 bg-body rounded text-center">
-          <h4 class="mb-3 text-white">Technical Skills</h4>
-
-          <div class="mb-3">
-            HTML
+      <div class="section-header">
+        <p class="section-tag">Get to know me</p>
+        <h2 class="section-title">About <span>Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="about.png" alt="About Kushika" />
+        </div>
+        <div class="about-content">
+          <h3>Hello, I'm Kushika Kumari.</h3>
+          <p>
+            I enjoy creating websites and applications using languages like HTML, CSS, JavaScript, Java, and Python.
+            I love exploring new technologies and working on real-world projects that help me grow as a developer.
+          </p>
+          <p>
+            My goal is to improve my skills every day and prepare for exciting opportunities in the tech world.
+            Currently interning at <strong>Ethara AI</strong> as an LLM Post-Training Intern, working on fine-tuning LLMs and building agentic AI workflows.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">9.0</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="mb-3">
-            CSS
-
+  <!-- Experience Section -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Work History</p>
+        <h2 class="section-title">My <span>Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">LLM Post-Training Intern</h3>
+                <p class="timeline-company"><i class="fa-solid fa-building"></i> Ethara AI</p>
+              </div>
+              <span class="timeline-date">Jan 2026 – Present</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Fine-tuned LLMs using RLHF and instruction tuning.</li>
+              <li>Evaluated model responses to improve output quality.</li>
+              <li>Built agentic AI workflows with tool-use and reasoning.</li>
+              <li>Curated datasets for LLM post-training pipelines.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>RLHF</span>
+              <span>Instruction Tuning</span>
+              <span>Prompt Engineering</span>
+              <span>LLM Evaluation</span>
+            </div>
           </div>
+        </div>
+      </div>
 
-          <div class="mb-3">
-            JavaScript
-
+      <!-- Education -->
+      <div class="section-header" style="margin-top: 60px;">
+        <p class="section-tag">Academic Background</p>
+        <h2 class="section-title">Edu<span>cation</span></h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-info">
+            <h3>B.Tech – Computer Science</h3>
+            <p class="edu-school">IIMT College of Engineering, AKTU</p>
+            <p class="edu-detail">Gautam Buddha Nagar, India &nbsp;|&nbsp; CGPA: 9.0</p>
+            <p class="edu-coursework">Software Engineering · OS · Algorithms · AI</p>
           </div>
-
-          <div class="mb-3">
-            Python
-
+          <span class="edu-year">May 2026</span>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+          <div class="edu-info">
+            <h3>Senior Secondary (12th)</h3>
+            <p class="edu-school">Kendriya Vidyalaya</p>
+            <p class="edu-detail">Rajgir, Bihar, India &nbsp;|&nbsp; CBSE Board – 85%</p>
           </div>
-          <div class="mb-3">
-            SQL
+          <span class="edu-year">May 2022</span>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fa-solid fa-book"></i></div>
+          <div class="edu-info">
+            <h3>Secondary (10th)</h3>
+            <p class="edu-school">Sanskar Public School</p>
+            <p class="edu-detail">Sheikhpura, Bihar, India &nbsp;|&nbsp; CBSE Board – 87%</p>
+          </div>
+          <span class="edu-year">Mar 2020</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What I know</p>
+        <h2 class="section-title">My <span>Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Programming Languages</h3>
+          <div class="skill-tags">
+            <span>Java</span><span>JavaScript</span><span>Python</span>
           </div>
         </div>
 
-        <!-- Soft Skills -->
-        <div class=" title col-md-6 mb-4 shadow-lg p-3 mb-5 bg-body rounded text-center">
-          <h4 class="mb-3 text-white ">Soft Skills</h4>
-
-          <div class="mb-3">
-            Leadership
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>Generative AI & LLMs</h3>
+          <div class="skill-tags">
+            <span>LLM Evaluation</span><span>RLHF</span><span>Instruction Tuning</span><span>Prompt Engineering</span>
           </div>
+        </div>
 
-          <div class="mb-3">
-            Team Work
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>Development</h3>
+          <div class="skill-tags">
+            <span>MERN Stack</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Tailwind</span>
           </div>
+        </div>
 
-          <div class="mb-3">
-            Communication Skills
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Database</h3>
+          <div class="skill-tags">
+            <span>MySQL</span>
           </div>
+        </div>
 
-          <div class="mb-3">
-            Problem Solving
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-brands fa-python"></i></div>
+          <h3>Python Libraries</h3>
+          <div class="skill-tags">
+            <span>NumPy</span><span>Matplotlib</span><span>Pandas</span>
           </div>
+        </div>
 
-          <div class="mb-3">
-            Time Management
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-wrench"></i></div>
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>VS Code</span><span>Figma</span>
           </div>
+        </div>
 
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span>Leadership</span><span>Team Work</span><span>Communication</span><span>Problem Solving</span><span>Time Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What I've built</p>
+        <h2 class="section-title">My <span>Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-users-gear"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/kushika0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>CRUD Employee Management App</h3>
+          <p>Full-stack CRUD app for 20+ employee records built with Spring Boot and React.js. Tested APIs using Postman, achieving 100% test pass rate.</p>
+          <div class="project-stack">
+            <span>Java</span><span>Spring Boot</span><span>React.js</span><span>MySQL</span><span>Postman</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-film"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/kushika0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>OTT Platform (Anime Streaming Site)</h3>
+          <p>Fetched 50+ entries via AniList REST API. Search/filter functionality cut discovery time by 70%.</p>
+          <div class="project-stack">
+            <span>React.js</span><span>JavaScript</span><span>REST API</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-brands fa-figma"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/kushika0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Figma Template Website</h3>
+          <p>Converted a Figma design into a fully responsive website within 5 days. Implemented animations and layouts ensuring cross-browser compatibility.</p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="certifications section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Achievements</p>
+        <h2 class="section-title">Certifi<span>cations</span></h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="cert-info">
+            <h3>Industrial IoT: Basic Introduction Using ThingWorx</h3>
+            <p>Dysmech Competency Services</p>
+          </div>
+          <span class="cert-year">2023</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+          <div class="cert-info">
+            <h3>Python Developer</h3>
+            <p>Sololearn</p>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="cert-info">
+            <h3>Introduction to SQL</h3>
+            <p>Sololearn</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-
-  <section class="contact-section py-5" id="Contact">
-    <div class="container-fluid">
-      <h2 class="text-center mb-4">Contact <span style="color: #672577;">Me</span></h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <ul class="list-group list-group-flush fs-5">
-            <li class="list-group-item bg-transparent text-white">
-              <strong>Email:</strong>
-              <a href="mailto:kushika1404@gmail.com" target="_blank"
-                class="text-white text-decoration-underline">kushika1404@gmail.com </a>
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-              <strong>LinkedIn:</strong>
-              <a href="https://www.linkedin.com/in/kushika-kumari-6391b5260" target="_blank"
-                class="text-white text-decoration-underline">linkedin.com/in/
-                kushika</a>
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-              <strong>GitHub:</strong>
-              <a href="https://github.com/kushika0" target="_blank"
-                class="text-white text-decoration-underline">github.com/kushika</a>
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-              <strong> Location:</strong> Greater Noida,UP, India.
-            </li>
-          </ul>
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Get in touch</p>
+        <h2 class="section-title">Contact <span>Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">I'm currently open to new opportunities. Whether you have a question or just want to say hi — my inbox is always open!</p>
+          <div class="contact-items">
+            <a href="mailto:kushika1404@gmail.com" class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">kushika1404@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/kushika-kumari-6391b5260" target="_blank" class="contact-item">
+              <div class="contact-item-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-value">linkedin.com/in/kushika</span>
+              </div>
+            </a>
+            <a href="https://github.com/kushika0" target="_blank" class="contact-item">
+              <div class="contact-item-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <span class="contact-item-label">GitHub</span>
+                <span class="contact-item-value">github.com/kushika0</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">Noida, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-cta">
+          <div class="cta-card">
+            <i class="fa-solid fa-paper-plane cta-icon"></i>
+            <h3>Let's Work Together</h3>
+            <p>Open for internships, collaborations, and exciting projects.</p>
+            <a href="mailto:kushika1404@gmail.com" class="btn btn-primary">Say Hello <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <footer class="text-white py-4" style="background-color: #dfcb80">
-  <div class="container text-center">
-    <p class="mb-1">© 2025 Kushika Kumari. All rights reserved.</p>
-    <div class="social-icons mb-2">
-      <a href="https://www.linkedin.com/in/kushika-kumari-6391b5260" target="_blank" class="text-white me-3">
-        <i class="fab fa-linkedin fa-lg"></i>
-      </a>
-      <a href="https://github.com/kushika0" target="_blank" class="text-white me-3">
-        <i class="fab fa-github fa-lg"></i>
-      </a>
-      <a href="mailto:kushika1404@gmail.com" class="text-white">
-        <i class="fas fa-envelope fa-lg"></i>
-      </a>
-    </div>
-    <small>Made with ❤️ by Kushika</small>
-  </div>
-</footer>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a class="footer-logo" href="#home"><span>K</span>ushika.</a>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/kushika-kumari-6391b5260" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/kushika0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:kushika1404@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Kushika Kumari. Made with <span style="color:#a855f7">♥</span> in India.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navToggle.classList.toggle('active');
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('active');
+      });
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY + 80;
+      sections.forEach(sec => {
+        if (scrollY >= sec.offsetTop && scrollY < sec.offsetTop + sec.offsetHeight) {
+          document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`.nav-link[href="#${sec.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    });
+
+    // Typewriter effect
+    const roles = ['Web Developer', 'LLM Intern @ Ethara AI', 'MERN Stack Dev', 'AI Enthusiast'];
+    let ri = 0, ci = 0, deleting = false;
+    const roleEl = document.getElementById('roleText');
+    function typeWriter() {
+      const current = roles[ri];
+      if (!deleting) {
+        roleEl.textContent = current.substring(0, ++ci);
+        if (ci === current.length) { deleting = true; setTimeout(typeWriter, 1800); return; }
+      } else {
+        roleEl.textContent = current.substring(0, --ci);
+        if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
+      }
+      setTimeout(typeWriter, deleting ? 60 : 100);
+    }
+    typeWriter();
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.about-grid, .timeline-item, .edu-card, .skill-card, .project-card, .cert-card, .contact-grid').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
 
 </body>
-
 </html>
